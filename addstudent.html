@@ -35,50 +35,33 @@
 
             </div>
 
-            <table class="table table-borderless table-hover w-auto">
-                <thead>
-                    <tr>
-                       <th>first</th>
-                       <th>last</th>
-                       <th>major</th>
-                       <th>advisor</th>
-                       <th>gpa</th>
-                       <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table_rows" id="">
-                        <td>John</td>
-                        <td>Blutarsky</td>
-                        <td>computer science</td>
-                        <td>Jim Wilson</td>
-                        <td>3.20</td>
-                        <td>
-                            <span class="edit" onclick="window.location.href='addstudent.html';">edit</span>
-                            <span class="edit">delete</span>
-                        </td>
-                    </tr>
-                    <tr class="table_rows" id="">
-                        <td>Steve</td>
-                        <td>Johnson</td>
-                        <td>computer science</td>
-                        <td>Jared Porter</td>
-                        <td>3.90</td>
-                        <td>
-                            <span class="edit" onclick="window.location.href='addstudent.html';">edit</span>
-                            <span class="edit">delete</span>
-                        </td>
-                    </tr>    
-                </tbody>
-                <tfoot>
-                    <td>
-                        <button type="submit" class="btn btn-outline-secondary mb-2 myButton" id="addButton" onclick="window.location.href='addstudent.html';">+</button>
-                    </td>
-                </tfoot>
 
-            </table>
-
-
+            <div>
+                <div id="main_content">
+                    <!-- <form action="" method=""> -->
+                        <div class="input-container">
+                            <input type="text" onkeypress="pulsar(this)" name="first" class="mb-2 mr-sm-2" autocomplete="off" placeholder="FIRST NAME">
+                        </div>
+                        <div class="input-container">
+                            <input type="text" onkeypress="pulsar(this)" name="last" class="mb-2 mr-sm-2" autocomplete="off" placeholder="LAST NAME">
+                        </div>
+                        <div class="input-container" >
+                            <input type="text" name="major" class="mb-2 mr-sm-2" autocomplete="off" placeholder="MAJOR">
+                        </div>
+                        <div class="input-container" >
+                            <input type="text" name="advisor" class="mb-2 mr-sm-2" autocomplete="off" placeholder="ADVISOR">
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="gpa" id="temp" autocomplete="off" class="mb-2 mr-sm-2" placeholder="GPA">
+                        </div>
+                        <div class="input-container">
+                            <button type="submit" class="btn btn-outline-secondary mb-2 myButton" id="myButton" onclick="window.location.href='students.html';">submit</button>
+                            <button type="submit" class="btn btn-outline-secondary mb-2 myButton" id="myButton" onclick="window.location.href='students.html';">cancel</button>
+                        </div>
+                        
+                    <!-- </form> -->
+                </div>
+            </div>
         </div>
         
         <script src="" async defer></script>
